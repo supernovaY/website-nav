@@ -1,5 +1,26 @@
 {
+  "name": "website-nav",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "dayjs": "^1.11.10",
+    "element-plus": "^2.3.14",
+    "qs": "^6.11.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
+  },
   "devDependencies": {
-    "cssnano": "^4.1.10"
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
+    "vite": "^4.4.5"
   }
 }
