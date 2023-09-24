@@ -277,3 +277,4 @@ export function GetFirstWeekBegDay(year) {
 　 tempdate = tempdate.setDate(tempdate.getDate() + (8 - temp));
 　 return new Date(tempdate);　
 }
+

@@ -1,0 +1,69 @@
+
+// transition 动画
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-blur-in {
+  from {
+    filter: blur(20px) brightness(0.3);
+    transform: scale(1.6);
+  }
+  to {
+    filter: blur(0) brightness(1);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fade-blur-main-in {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* 定义闪烁动画 */
+@keyframes blink {
+  0% { opacity: 1; } /* 初始状态，完全可见 */
+  50% { opacity: 0.2; } /* 中间状态，完全不可见 */
+  100% { opacity: 1; } /* 最终状态，再次完全可见 */
+}
+/* 选中时背景虚化 */
+@keyframes pick-on {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* 取消选中时搜索框复原 */
+@keyframes pick-cancel {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* 选中时搜索框移动 */
+@keyframes input-move {
+  100% {
+    margin-bottom: 100px;
+  }
+}
+/* 取消选中时搜索框复原 */
+@keyframes input-return {
+  0% {
+    margin-bottom: 100px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
+}

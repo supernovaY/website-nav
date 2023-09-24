@@ -1,28 +1,35 @@
 @import "./reset.scss";
 @import "./var.scss";
+@import './font.scss';
+@import './frames.scss';
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  background: #f5f7fa;
+  overflow: hidden;
 }
 #app {
-  width: 100%;
-  min-width: 1440px;
-  height: 100%;
-  .w220 {
-    width: 220px;
-  }
 }
 
 #head {
   height: $headHeight;
-  width: 100%;
-  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2000;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  transition:
+          filter 0.3s,
+          transform 0.3s;
+  animation: fade-blur-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
