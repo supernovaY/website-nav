@@ -72,6 +72,11 @@ const cancelPick = (event) => {
     .search {
         .input {
             width: 35vw;
+            @media (max-width: 720px) {
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+            }
             :deep(.el-input__wrapper) {
                 text-align: center;
                 padding: 5px 0;
@@ -138,6 +143,7 @@ const cancelPick = (event) => {
             position: absolute;
             font-size: 24px;
             top: 0;
+            right: 1px;
             padding: 5px;
             border-radius: 10px;
             box-shadow: 0 0 10px #eff4fc;

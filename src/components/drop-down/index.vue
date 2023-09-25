@@ -1,13 +1,13 @@
 <template>
     <div class="drop-down-frame" v-if="store.isDropDown">
-        <div class="drop-down">
+        <span class="drop-down">
             <div :class="{'option-box': true, 'is-select': item.isSelect}" v-for="(item, index) in store.searchAddressList" :key="index" @click="setSearchAddress(index)">
                 <svg class="icon icon-style" aria-hidden="true">
                     <use :xlink:href="item.img"></use>
                 </svg>
                 {{ item.name }}
             </div>
-        </div>
+        </span>
     </div>
 </template>
 
@@ -28,22 +28,30 @@
 <style scoped lang="scss">
     .drop-down-frame {
         animation: drop-down 0.6s forwards;
-        position: relative;
         background-color: #00000040;
         border-radius: 20px;
         margin: 2px 62px 0;
+
+        @media (max-width: 720px) {
+            margin: 5px 0 0;
+        }
 
         .drop-down {
             width: 35vw;
             display: flex;
             flex-wrap: wrap;
+            text-indent:30px;
+
+            @media (max-width: 720px) {
+                width: 100%;
+            }
 
             .option-box {
                 font-family: 'qiu-hong';
                 color: lightgray;
-                width: 120px;
-                padding: 5px 10px;
-                margin: 8px;
+                width: 100px;
+                padding: 5px 0;
+                margin: 5px;
                 background-color: #00000040;
                 backdrop-filter: blur(5px);
                 border-radius: 20px;
@@ -51,10 +59,11 @@
                     cursor: pointer;
                     animation: mouse-shadow 0.4s forwards;
                 }
+
             }
             .icon-style {
                 position: absolute;
-                left: 20px;
+                left: 10px;
             }
             .is-select {
                 color: #fff;

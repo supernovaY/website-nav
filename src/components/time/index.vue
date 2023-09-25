@@ -125,6 +125,9 @@
             background-color: #00000040;
             backdrop-filter: blur(1px);
             border-radius: 16px;
+            @media (max-width: 720px) {
+                margin: 0;
+            }
             .clock {
                 letter-spacing: 2px;
                 font-size: 45px;
