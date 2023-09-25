@@ -19,7 +19,7 @@ body {
   z-index: 2000;
 }
 
-.background {
+.img-background {
   position: absolute;
   left: 0;
   top: 0;
@@ -32,4 +32,12 @@ body {
           filter 0.3s,
           transform 0.3s;
   animation: fade-blur-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  font-size: 24px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }

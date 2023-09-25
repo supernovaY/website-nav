@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "list": [
+    {
+      "name": "百度",
+      "img": "#icon-baidu-circle-fill",
+      "address": "https://www.baidu.com/s?wd="
+    },
+    {
+      "name": "github",
+      "img": "#icon-github",
+      "address": "https://github.com/search?type=repositories&q="
+    },
+    {
+      "name": "cdn",
+      "img": "#icon-cdn",
+      "address": "https://www.bootcdn.cn/"
+    },
+    {
+      "name": "知乎",
+      "img": "#icon-zhihu",
+      "address": "https://www.zhihu.com/search?type=content&q="
+    },
+    {
+      "name": "google",
+      "img": "#icon-google",
+      "address": "https://www.google.com/search?q="
+    },
+    {
+      "name": "bilibili",
+      "img": "#icon-bilibili-line",
+      "address": "https://search.bilibili.com/all?keyword="
+    }
+  ]
+}

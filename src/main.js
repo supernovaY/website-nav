@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './style.css'
+import '../public/icon/iconfont.js'
 import App from './App.vue'
 import 'element-plus/theme-chalk/index.css'
 import ElementPlus from 'element-plus'

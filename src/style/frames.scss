@@ -43,6 +43,27 @@
     transform: scale(1.1);
   }
 }
+/* 选中时框颜色变化 */
+@keyframes color-none {
+  0% {
+    background-color: #00000040;
+    backdrop-filter: blur(15px);
+  }
+  100% {
+    background-color: #eee;
+    backdrop-filter: none;
+  }
+}
+@keyframes color-return {
+  0% {
+    background-color: #eee;
+    backdrop-filter: none;
+  }
+  100% {
+    background-color: #00000040;
+    backdrop-filter: blur(15px);
+  }
+}
 /* 取消选中时搜索框复原 */
 @keyframes pick-cancel {
   0% {
@@ -54,16 +75,47 @@
 }
 /* 选中时搜索框移动 */
 @keyframes input-move {
+  0% {
+    transform: translateY(0)
+  }
   100% {
-    margin-bottom: 100px;
+    transform: translateY(-120px)
   }
 }
 /* 取消选中时搜索框复原 */
 @keyframes input-return {
   0% {
-    margin-bottom: 100px;
+    transform: translateY(-120px)
   }
   100% {
-    margin-bottom: 0px;
+    transform: translateY(0)
+  }
+}
+/* 鼠标移入动画 */
+@keyframes mouse-shadow {
+  100% {
+    color: #fff;
+    box-shadow: 0 0 10px #eff4fc;
+  }
+}
+/* 下拉框载入动画 */
+@keyframes drop-down {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(50px)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+/* 鼠标移入动画 */
+@keyframes drop-up {
+  0% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(0)
   }
 }

@@ -128,7 +128,6 @@
             .clock {
                 letter-spacing: 2px;
                 font-size: 45px;
-                margin-bottom: 20px;
             }
             .date {
                 font-family: 'qiu-hong';
@@ -136,9 +135,8 @@
                 font-size: 24px;
             }
             span {
-                font-family: 'qiu-hong';
                 letter-spacing: 2px;
-                font-size: 24px;
+                font-size: 18px;
             }
             /* 应用闪烁动画到元素 */
             .blinking {

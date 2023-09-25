@@ -1,9 +1,9 @@
 <template>
-      <div class="background">
-            <transtion>
-                  <img :class="{ 'is-pick': store.isPick, 'cancel-pick': !store.isPick  }"
+      <div class="img-background">
+            <Transition>
+                  <img @click="cancelPick" :class="{ 'is-pick': store.isPick, 'cancel-pick': !store.isPick  }"
                        :src="getBg" />
-            </transtion>
+            </Transition>
       </div>
 </template>
 
@@ -11,7 +11,7 @@
 import { useStore } from '@/store/store.js';
 const store = useStore();
 
-//
+// 背景图片
 const getBg = `images/background/background${Math.floor(Math.random() * 5 + 1)}.jpg`;
 </script>
 
