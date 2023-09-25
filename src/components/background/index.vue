@@ -1,7 +1,7 @@
 <template>
       <div class="img-background">
             <Transition>
-                  <img @click="cancelPick" :class="{ 'is-pick': store.isPick, 'cancel-pick': !store.isPick  }"
+                  <img @click="cancelPick" :class="{ 'is-media': true, 'is-pick': store.isPick, 'cancel-pick': !store.isPick  }"
                        :src="getBg" />
             </Transition>
       </div>
@@ -25,5 +25,9 @@ const getBg = `images/background/background${Math.floor(Math.random() * 5 + 1)}.
   }
   .cancel-pick {
         animation: pick-cancel 0.3s forwards;
+  }
+  .is-media {
+      width: 100%;
+      height: 100%;
   }
 </style>
